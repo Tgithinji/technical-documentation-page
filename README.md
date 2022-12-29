@@ -10,4 +10,4 @@ In this project I created a technical documentation page using flexbox since tha
 
 * [Link to the project assignment](https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page)
 
-* [Link to the page I created]()
+* [Link to the page I created](https://tgithinji.github.io/technical-documentation-page/)
