@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+  <nav id="navbar">
+    <header>Flexbox</header>
+    <ul>
+      <li><a class="nav-link" href="#introduction">Introduction</a>
+      </li>
+      <li><a class="nav-link" href="#flex_direction">Flex Direction</a>
+      </li>
+      <li><a class="nav-link" href="#growing_and_shrinking">Growing and Shrinking</a>
+      </li>
+      <li><a class="nav-link" href="#flex_basis">Flex basis</a>
+      </li>
+      <li><a class="nav-link" href="#wrapping">Wrapping </a>
+      </li>
+    </ul>
+  </nav>
+
+   <main id="main-doc">
+     <section class="main-section" id="introduction">
+       <header>Introduction</header>
+       <p>Flexbox is a layout module in CSS that allows you to layout elements within a container in a more flexible and efficient way. It allows you to align elements horizontally or vertically, distribute space among elements, and control the size of elements.</p>
+       <p>Flexbox is particularly useful for responsive web design, as it allows you to create layouts that adapt to different screen sizes and device orientations. It can also be used to create grid layouts, with rows and columns that adjust to the available space.</p>
+      <p>To use flexbox, you will need to set the display property of the container element to "flex". You can then use various flexbox properties to control the layout of the child elements within the container. These properties include align-items, justify-content, and flex-wrap.</p>
+      <ul>
+        <li>align-items</li>
+        <li>justify-content</li>
+        <li>flex-wrap</li>
+      </ul> 
+     </section>
+
+     <section class="main-section" id="flex_direction">
+       <header>Flex Direction</header>
+       <p>In flexbox, the flex-direction property determines the direction in which elements are laid out within a container. The default value is "row", which means that elements are laid out in a horizontal row, with new elements added to the right of the previous ones.</p>
+       <p>Here is an example of using flex-direction to create a horizontal row of elements:<br>
+         <code>
+           .container {<br>
+    display: flex;<br>
+  flex-direction: row;<br>
+}
+</code>
+       </p>
+       <p>You can also use the value "row-reverse" to reverse the order of the elements, so that they are laid out from right to left.<br>
+         <code>.container {<br>
+  display: flex;<br>
+  flex-direction: row-reverse;<br>
+}
+</code>
+       </p>
+       <p>
+         In addition to "row" and "row-reverse", the flex-direction property can also be set to "column" to lay out elements in a vertical column, with new elements added below the previous ones.<br>
+         <code>
+           .container {<br>
+  display: flex;<br>
+  flex-direction: column;<br>
+}
+         </code>
+       </p>
+       <p>
+         Finally, you can use the value "column-reverse" to lay out elements in a vertical column, but with the order reversed so that the elements are added above the previous ones.<br>
+         <code>
+           .container {<br>
+  display: flex;<br>
+  flex-direction: column-reverse;<br>
+}
+
+         </code>
+       </p>
+     </section>
+
+     <section class="main-section" id="growing_and_shrinking">
+       <header>Growing and Shrinking</header>
+       <p>In flexbox, three properties control how elements within a container grow or shrink to fill available space. They inlude:</p>
+       <ul>
+         <li>Flex-grow</li>
+         <li>Flex-shrink</li>
+         <li>Flex-basis</li>
+       </ul>
+       <p>The flex-grow property determines how much an element should grow relative to the other elements in the container when there is extra space available. The default value is 0, which means that the element will not grow at all. A positive value, such as 1, will cause the element to grow to fill the available space.</p>
+       <p>Here is an example of using flex-grow to cause an element to grow to fill the available space:
+         <code>
+           .item {<br>
+  flex-grow: 1;<br>
+}
+         </code>
+       </p>
+       <p>The flex-shrink property works in a similar way, but it determines how much an element should shrink when there is not enough space to fit all of the elements within the container. The default value is 1, which means that the element will shrink to fit the available space. A value of 0 means that the element will not shrink at all.<br>
+          <code>
+            .item {<br>
+  flex-shrink: 1;<br>
+}
+
+          </code>
+        </p>
+       </section>
+
+       <section class="main-section" id="flex_basis"> 
+         <header>Flex Basis</header>
+        <p>The flex-basis property in flexbox determines the initial size of an element before any remaining space is distributed according to the flex-grow and flex-shrink values. The default value is "auto", which means that the element will use its natural size, based on the content it contains.</p>
+        <p>You can specify a fixed size for the element using any of the usual CSS units, such as pixels (px), points (pt), or ems (em). For example, you can set the flex-basis to 200 pixels like this:<br>
+          <code>.item {<br>
+  flex-basis: 200px;<br>
+}
+
+          </code>
+</p>
+     </section>
+
+     <section class="main-section" id="wrapping">
+       <header>Wrapping</header>
+       <p>In flexbox, the flex-wrap property determines whether elements within a container should wrap onto multiple lines when there is not enough space to fit them on a single line. The default value is "nowrap", which means that the elements will not wrap and will instead be squeezed onto a single line.
+
+Here is an example of using flex-wrap to allow elements to wrap onto multiple lines:
+<code>
+  .container {<br>
+  display: flex;<br>
+  flex-wrap: wrap;<br>
+}
+
+</code>
+</p>
+
+<p>Visit <a href="https://www.w3schools.com/css/css3_flexbox.asp">W3Schools</a> to learn more about flexbox.</p>
+     </section>
+   </main>
+   </div>
+</body>
+</html>
